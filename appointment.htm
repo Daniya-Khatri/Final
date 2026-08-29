@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora Health - Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.htm" class="logo">
+            <span class="logo-box">N</span>
+            <span>Nexora Health</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="home.htm">Home</a>
+            <a href="doctor.htm">Doctors</a>
+            <a href="services.htm">Services</a>
+            <a href="appointment.htm" class="active">Appointment</a>
+            <a href="patient.htm">Patient Portal</a>
+            <a href="contact.htm">Contact</a>
+        </nav>
+
+        <a href="appointment.htm" class="nav-btn">Book Appointment</a>
+
+    </div>
+</header>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="small-label">ONLINE APPOINTMENT</span>
+
+        <h1>Book Your Appointment</h1>
+
+        <p>
+            Select your preferred department, doctor and
+            appointment time through our simple booking form.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="appointment-section">
+
+    <div class="container appointment-layout">
+
+
+        <div class="appointment-info">
+
+            <span class="small-label">EASY BOOKING</span>
+
+            <h2>Schedule Your Visit</h2>
+
+            <p>
+                Complete the form and our team can use your
+                information to arrange your appointment.
+            </p>
+
+
+            <div class="appointment-feature">
+
+                <div class="feature-icon">01</div>
+
+                <div>
+                    <h3>Choose a Specialist</h3>
+                    <p>
+                        Select the department and doctor
+                        according to your healthcare needs.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="appointment-feature">
+
+                <div class="feature-icon">02</div>
+
+                <div>
+                    <h3>Select Date and Time</h3>
+                    <p>
+                        Choose a convenient date and available
+                        appointment time.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="appointment-feature">
+
+                <div class="feature-icon">03</div>
+
+                <div>
+                    <h3>Confirm Details</h3>
+                    <p>
+                        Enter your basic information and
+                        submit your appointment request.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="appointment-form-card">
+
+            <div class="form-heading">
+                <span class="small-label">APPOINTMENT FORM</span>
+                <h2>Request an Appointment</h2>
+            </div>
+
+
+            <form id="appointmentForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter phone number"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+
+                        <select id="department" name="department" required>
+
+                            <option value="">Select Department</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="General Medicine">
+                                General Medicine
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="doctor">Select Doctor</label>
+
+                        <select id="doctor" name="doctor" required>
+
+                            <option value="">Select Doctor</option>
+                            <option value="Dr. Sarah Ahmed">
+                                Dr. Sarah Ahmed
+                            </option>
+                            <option value="Dr. Ayesha Khan">
+                                Dr. Ayesha Khan
+                            </option>
+                            <option value="Dr. Omar Malik">
+                                Dr. Omar Malik
+                            </option>
+                            <option value="Dr. Hamza Ali">
+                                Dr. Hamza Ali
+                            </option>
+                            <option value="Dr. Maria Joseph">
+                                Dr. Maria Joseph
+                            </option>
+                            <option value="Dr. Hassan Raza">
+                                Dr. Hassan Raza
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="appointmentDate">
+                            Appointment Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="appointmentDate"
+                            name="appointmentDate"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Additional Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Write any additional information">
+                    </textarea>
+
+                </div>
+
+
+                <button type="submit" class="primary-btn form-btn">
+                    Submit Appointment
+                </button>
+
+                <div id="appointmentMessage" class="form-message"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.htm" class="logo footer-logo">
+                <span class="logo-box">N</span>
+                <span>Nexora Health</span>
+            </a>
+
+            <p>
+                Modern healthcare with professional care,
+                trusted doctors and patient-focused services.
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="home.htm">Home</a>
+            <a href="doctor.htm">Doctors</a>
+            <a href="services.htm">Services</a>
+        </div>
+
+        <div>
+            <h3>Patient</h3>
+            <a href="appointment.htm">Appointment</a>
+            <a href="patient.htm">Patient Portal</a>
+            <a href="contact.htm">Contact</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>+92 300 1234567</p>
+            <p>info@nexorahealth.com</p>
+            <p>Karachi, Pakistan</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright 2026 Nexora Health. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
